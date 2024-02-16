@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "reference-book"
+version = "0.1.0"
+description = "phonebook"
+authors = ["Andrey <lutecequantum@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+npyscreen = "^4.10.5"
+faker = "^23.1.0"
+pynput = "^1.7.6"
+
+[tool.poetry.scripts]
+start = "reference_book.scripts.entrypoint:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
