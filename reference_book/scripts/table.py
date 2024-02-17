@@ -117,8 +117,8 @@ class TableForm(nps.SplitFormWithMenus):
     Можно сократить число данных функций с 10 до 1, но для этого необходимо изменить содержимое файла npyscreen
     /.venv/lib/python3.8/site-packages/npyscreen/wgbutton.py А именно - позволить __init__ класса используемых кнопок
     MiniButtonPress(MiniButton) принимать параметр arguments и использовать его при вызове when_pressed_function
-    Тогда, при создании кнопок (236-245 строки), объявив в качестве arguments номер записи, напротив которой находится
-    кнопка, можно будет использовать его в качестве индекса current_items в строке 126.
+    Тогда, при создании кнопок (237-246 строки), объявив в качестве arguments номер записи, напротив которой находится
+    кнопка, можно будет использовать его в качестве индекса current_items в строке 127.
     """
     def buttonpress0(self):
         global current_items
